@@ -1,0 +1,29 @@
+<html>
+<body>
+<script>
+function check()
+{
+var x=document.getElementById("abc").value;
+var y=document.getElementById("cab").value; 
+if((x=="")||(y==""))
+{
+lbl.innerHTML="&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;wrong input";
+return false;
+}
+else
+return true;
+}
+</script>
+<div style="margin-left:0px;margin-top:80px;">
+<h1>Enter your credentials</h1>
+<form action="login1" onsubmit="return check()">
+Enter id &nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;: <input type="text" name="abc" id="abc"/> <br><br>
+Enter password : <input type="text" name="cab" id="cab"/><br><br>
+&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;
+&nbsp;&nbsp;<input type="submit" value="Login" ><br>
+<p id="lbl"></p>
+</form>
+<a href="register.html">New users register here...</a>
+
+</div></body>
+</html>
